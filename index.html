@@ -24,8 +24,6 @@
 <body>
 <h1>Sudoku Solver</h1>
   <table id="sudokuTable">
-    <!-- Sudoku tahtasını oluşturmak için boş hücreler -->
-    <!-- Boş hücreler için <td></td> kullanılıyor -->
     <tr id="tr1">
       <td contenteditable="true" id="td1"></td>
       <td contenteditable="true" id="td2"></td>
@@ -125,14 +123,10 @@
       <td contenteditable="true" id="td8"></td>
       <td contenteditable="true" id="td9"></td>
     </tr>
-    <!-- Diğer satırlar için aynı yapıyı tekrar edin -->
-    <!-- Toplamda 9 satır olacak -->
   </table>
   <br>
-  <button onclick="getSudoku(board)">Sudoku Çöz</button>
-  <table id="solvedTable">
-    <!-- Sudoku çözümünü göstermek için boş hücreler -->
-  </table>
+  <button onclick="getSudoku(board)">Solve Sudoku</button>
+	 <button onclick="resetSudoku()">Reset Sudoku</button>
 
 </body>
 </html>
